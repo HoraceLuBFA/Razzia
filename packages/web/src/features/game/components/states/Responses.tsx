@@ -5,7 +5,7 @@ import type { ManagerStatusDataMap } from "@razzia/common/types/game/status"
 import AnswerButton from "@razzia/web/features/game/components/AnswerButton"
 import AnswerNote from "@razzia/web/features/game/components/AnswerNote"
 import {
-  ANSWERS_COLORS,
+  getAnswerColors,
   ANSWERS_LABELS,
   SFX,
 } from "@razzia/web/features/game/utils/constants"
@@ -19,6 +19,7 @@ interface Props {
 const Responses = ({ data }: Props) => {
   const { question, answers, responses, solutions, type, note } = data
   const { ResponsesComponent } = QUESTION_REGISTRY[type]
+  const answerColors = getAnswerColors(answers)
   const percentages = calculatePercentages(responses)
   const [isMusicPlaying, setIsMusicPlaying] = useState(false)
 
@@ -79,11 +80,11 @@ const Responses = ({ data }: Props) => {
               key={key}
               className={clsx(
                 "flex flex-col justify-end self-end overflow-hidden rounded-md",
-                ANSWERS_COLORS[key],
+                answerColors[key],
               )}
               style={{ height: percentages[key] }}
             >
-              <span className="w-full bg-black/10 text-center text-lg font-bold text-white drop-shadow-md">
+              <span className="w-full bg-black/10 text-center text-lg font-bold drop-shadow-md">
                 {responses[key] || 0}
               </span>
             </div>
@@ -97,7 +98,7 @@ const Responses = ({ data }: Props) => {
           {answers.map((answer, key) => (
             <AnswerButton
               key={key}
-              className={clsx(ANSWERS_COLORS[key], {
+              className={clsx(answerColors[key], {
                 "opacity-65": solutions && !solutions.includes(key),
               })}
               label={ANSWERS_LABELS[key]}

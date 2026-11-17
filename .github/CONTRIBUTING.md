@@ -1,5 +1,7 @@
 # Contributing to Razzia
 
+本 Fork 由 [HoraceLuBFA](https://github.com/HoraceLuBFA/Razzia) 维护，默认开发与 PR 目标为 `main`，保留原版历史及许可证。向原始公版贡献时，请查阅 Ralex91/Razzia 当时的贡献要求。
+
 Thank you for your interest in contributing!
 
 ## Getting Started
@@ -7,9 +9,9 @@ Thank you for your interest in contributing!
 Requirements: Node.js 26+ and [pnpm](https://pnpm.io/) 10.16+.
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/Razzia.git`
-3. Checkout the `dev` branch: `git checkout dev`
-4. Install dependencies from the repository root: `pnpm install`
+2. Clone your fork: `git clone https://github.com/HoraceLuBFA/Razzia.git`
+3. Checkout the `main` branch: `git checkout main`
+4. Install dependencies from the repository root: `pnpm install --frozen-lockfile`
 5. Create your `.env`: `cp .env.example .env` and set `MANAGER_PASSWORD`
 6. Create a branch from `dev`: `git checkout -b feat/your-feature-name`
 7. Start the app in development mode: `pnpm dev`
@@ -43,8 +45,8 @@ chore: update dependencies
 
 ## Pull Requests
 
-- **Target the `dev` branch**, not `main`. PRs targeting `main` directly will not be merged except for critical security hotfixes.
-- If you already have a local clone, make sure to pull the latest changes from `dev` before starting: `git checkout dev && git pull`
+- **Target this Fork’s `main` branch**: `HoraceLuBFA/Razzia`.
+- Start from the latest Fork main: `git checkout main && git pull --ff-only`.
 - **One PR = one feature or fix.** Do not bundle multiple features in a single PR — it becomes unmanageable to review and harder to revert if something breaks.
 - Make sure the CI passes before requesting review (format, lint, unit and e2e tests)
 - Add or update tests when you change behavior

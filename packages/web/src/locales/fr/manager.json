@@ -42,6 +42,30 @@
       "withinMargin": "{{value}} ± {{margin}}",
       "outsideMargin": "Hors de la marge",
       "average": "Réponse moyenne : {{value}}"
+    },
+    "analytics": {
+      "overview": "Vue d’ensemble",
+      "details": "Détails des questions",
+      "rank": "Classement final",
+      "accuracy": "Réussite",
+      "completion": "Complétion",
+      "unanswered": "Sans réponse",
+      "totalQuestions": "Questions",
+      "participants": "Participants",
+      "averageAccuracy": "Réussite moyenne",
+      "averagePoints": "Score moyen",
+      "highestPoints": "Meilleur score",
+      "players": "Résultats individuels",
+      "questionAnalysis": "Analyse des questions",
+      "search": "Rechercher un participant…",
+      "sort": "Trier par",
+      "download": "Exporter en CSV",
+      "accuracyHint": "Réussite = réponses correctes ÷ toutes les questions, selon les règles du jeu. Le classement et les scores intègrent la rapidité et la pondération.",
+      "surveyHint": "Les sondages affichent la participation et la complétion.",
+      "noMatches": "Aucun participant correspondant",
+      "duplicateName": "Pseudonyme répété",
+      "identityHint": "Cet ancien résultat associe les réponses par pseudonyme. Les pseudonymes identiques conservent leur classement et score ; les statistiques individuelles affichent —. Les nouvelles parties identifient chaque participant.",
+      "note": "Note"
     }
   },
   "tabs": {

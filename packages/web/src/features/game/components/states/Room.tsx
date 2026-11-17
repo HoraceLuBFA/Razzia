@@ -3,7 +3,6 @@ import { QRCodeSVG } from "qrcode.react"
 import { AlertDialog } from "radix-ui"
 import { useRef, useState } from "react"
 import { useTranslation } from "react-i18next"
-import type { Player } from "@razzia/common/types/game"
 import type { ManagerStatusDataMap } from "@razzia/common/types/game/status"
 import { EVENTS } from "@razzia/common/constants"
 import PlayerConnectionStatus from "@razzia/web/features/game/components/PlayerConnectionStatus"
@@ -19,11 +18,9 @@ interface Props {
 }
 
 const Room = ({ data: { text, inviteCode } }: Props) => {
-  const { gameId, players, locked } = useManagerStore()
+  const { gameId, players: playerList, locked } = useManagerStore()
   const { socket } = useSocket()
   const webUrl = window.location.origin
-  const [playerList, setPlayerList] =
-    useState<Array<Player & { timedOut?: boolean }>>(players)
   const [qrOpen, setQrOpen] = useState(false)
   const qrContentRef = useRef<HTMLDivElement>(null)
   const { t } = useTranslation()
@@ -31,23 +28,31 @@ const Room = ({ data: { text, inviteCode } }: Props) => {
   useOnClickOutside({ ref: qrContentRef, handler: () => setQrOpen(false) })
 
   useEvent(EVENTS.MANAGER.NEW_PLAYER, (player) => {
-    setPlayerList([...playerList, player])
+    useManagerStore.setState(({ players }) => ({
+      players: [...players, player],
+    }))
   })
 
   useEvent(EVENTS.MANAGER.REMOVE_PLAYER, (playerId) => {
-    setPlayerList(playerList.filter((p) => p.id !== playerId))
+    useManagerStore.setState(({ players }) => ({
+      players: players.filter((p) => p.id !== playerId),
+    }))
   })
 
   useEvent(EVENTS.MANAGER.PLAYER_KICKED, (playerId) => {
-    setPlayerList(playerList.filter((p) => p.id !== playerId))
+    useManagerStore.setState(({ players }) => ({
+      players: players.filter((p) => p.id !== playerId),
+    }))
   })
 
   useEvent(
     EVENTS.MANAGER.PLAYER_UPDATED,
     ({ previousId, player, timedOut }) => {
-      setPlayerList((list) =>
-        list.map((p) => (p.id === previousId ? { ...player, timedOut } : p)),
-      )
+      useManagerStore.setState(({ players }) => ({
+        players: players.map((p) =>
+          p.id === previousId ? { ...player, timedOut } : p,
+        ),
+      }))
     },
   )
 

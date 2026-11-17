@@ -15,7 +15,8 @@
     "ja": "日本語 - japoński",
     "tr": "Türkçe - turecki",
     "pl": "Polski - polski",
-    "vi": "Tiếng Việt - wietnamski"
+    "vi": "Tiếng Việt - wietnamski",
+    "zh": "简体中文"
   },
   "loading": "Ładowanie...",
   "next": "Dalej",
@@ -25,5 +26,6 @@
   "submit": "Wyślij",
   "close": "Zamknij",
   "previous": "Wstecz",
-  "changeLanguage": "Zmień język"
+  "changeLanguage": "Zmień język",
+  "pointsUnit": "pts"
 }

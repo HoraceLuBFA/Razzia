@@ -89,7 +89,7 @@ const ConfigManageQuizz = () => {
           JSON.parse(event.target?.result as string) as QuizzValidated,
         )
       } catch {
-        toast.error("Invalid JSON file")
+        toast.error(t("errors:quizz.invalidJson"))
       }
     }
 

@@ -63,7 +63,7 @@ const BaseConfig = () => {
             <ConfigField.Label
               icon={<Star className="size-4" />}
               label={t("quizz:question.config.maxPoints")}
-              unit="pts"
+              unit={t("common:pointsUnit")}
             />
             <ConfigNumberInput
               name="maxPoints"
@@ -80,7 +80,7 @@ const BaseConfig = () => {
             <ConfigField.Label
               icon={<ArrowBigDownDash className="size-4" />}
               label={t("quizz:question.config.penalty")}
-              unit={isPenaltyEnabled ? "pts" : undefined}
+              unit={isPenaltyEnabled ? t("common:pointsUnit") : undefined}
               action={
                 <Switch
                   aria-label={t("quizz:question.config.penalty")}

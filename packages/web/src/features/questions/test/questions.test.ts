@@ -36,8 +36,9 @@ const question = (overrides: Partial<Question> = {}): Question => ({
 })
 
 describe("isAnswerCorrect", () => {
-  it("accepts any right choice", () => {
-    expect(isAnswerCorrect(question(), [1, 2])).toBe(true)
+  it("uses balanced scoring for multiple choice", () => {
+    expect(isAnswerCorrect(question(), [1])).toBe(true)
+    expect(isAnswerCorrect(question(), [1, 2])).toBe(false)
     expect(isAnswerCorrect(question(), [2])).toBe(false)
   })
 

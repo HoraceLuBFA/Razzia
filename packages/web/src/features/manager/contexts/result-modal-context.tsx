@@ -20,6 +20,7 @@ interface ResultModalContextType {
   getPlayerPoints: (_name: string) => number
   goNext: () => void
   goPrev: () => void
+  goToQuestion: (_index: number) => void
   onClose: () => void
 }
 
@@ -33,7 +34,14 @@ type Props = PropsWithChildren<{
 export const ResultModalProvider = ({ children, result, onClose }: Props) => {
   const [questionIndex, setQuestionIndex] = useState(0)
 
-  const questionResult = result.questions[questionIndex]
+  const questionResult: QuestionResult = result.questions[questionIndex] ?? {
+    type: "single",
+    question: "",
+    answers: [],
+    cooldown: 0,
+    time: 0,
+    playerAnswers: [],
+  }
   const total = result.questions.length
   const totalPlayers = result.players.length
 
@@ -60,9 +68,13 @@ export const ResultModalProvider = ({ children, result, onClose }: Props) => {
   const getPlayerPoints = (name: string) =>
     result.players.find((p) => p.username === name)?.points ?? 0
 
-  const goNext = () => setQuestionIndex((i) => Math.min(i + 1, total - 1))
+  const goNext = () =>
+    setQuestionIndex((i) => Math.min(i + 1, Math.max(0, total - 1)))
 
   const goPrev = () => setQuestionIndex((i) => Math.max(i - 1, 0))
+
+  const goToQuestion = (index: number) =>
+    setQuestionIndex(Math.max(0, Math.min(index, total - 1)))
 
   return (
     <ResultModalContext.Provider
@@ -79,6 +91,7 @@ export const ResultModalProvider = ({ children, result, onClose }: Props) => {
         getPlayerPoints,
         goNext,
         goPrev,
+        goToQuestion,
         onClose,
       }}
     >

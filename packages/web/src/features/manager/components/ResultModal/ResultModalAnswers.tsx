@@ -13,7 +13,7 @@ import {
   isMultiOptions,
 } from "@razzia/common/questions/options"
 import {
-  ANSWERS_COLORS,
+  getAnswerColors,
   ANSWERS_LABELS,
 } from "@razzia/web/features/game/utils/constants"
 import { useResultModal } from "@razzia/web/features/manager/contexts/result-modal-context"
@@ -66,6 +66,7 @@ const ResultModalAnswers = () => {
     useResultModal()
   const { t } = useTranslation()
 
+  const answerColors = getAnswerColors(questionResult.answers)
   const noAnswerCount = totalPlayers - answeredCount
   const { options } = questionResult
   const scoringMode = isMultiOptions(options) ? options.scoringMode : undefined
@@ -128,7 +129,7 @@ const ResultModalAnswers = () => {
         pa.answerIds?.includes(ai),
       ).length,
       isCorrect: questionResult.solutions?.includes(ai) ?? false,
-      color: ANSWERS_COLORS[ai % 4],
+      color: answerColors[ai % 4],
       answerLabel: ANSWERS_LABELS[ai % 4],
     }))
   })()
@@ -190,7 +191,7 @@ const ResultModalAnswers = () => {
               {row.color && row.answerLabel ? (
                 <div
                   className={clsx(
-                    "flex size-6 shrink-0 items-center justify-center rounded-md text-xs font-bold text-white",
+                    "flex size-6 shrink-0 items-center justify-center rounded-md text-xs font-bold",
                     row.color,
                   )}
                 >

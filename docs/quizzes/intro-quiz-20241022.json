@@ -1,0 +1,118 @@
+{
+  "id": "intro-quiz-20241022",
+  "gameMode": "quiz",
+  "subject": "导论 Quiz 20261117",
+  "questions": [
+    {
+      "type": "single",
+      "question": "电影视镜（Kinetoscope）的发明人是（ ）",
+      "media": {
+        "type": "image",
+        "url": "/media/intro-20261117-q01.webp"
+      },
+      "answers": [
+        "卢米埃尔兄弟",
+        "托马斯·爱迪生",
+        "乔治·伊斯曼",
+        "乔治·梅里爱"
+      ],
+      "solutions": [1],
+      "cooldown": 5,
+      "time": 30,
+      "maxPoints": 1000
+    },
+    {
+      "type": "single",
+      "question": "35mm 胶片中，35mm 指的是",
+      "media": {
+        "type": "image",
+        "url": "/media/intro-20261117-q02.webp"
+      },
+      "answers": ["画面高度", "画面宽度", "画面对角线长度", "胶片宽度"],
+      "solutions": [3],
+      "cooldown": 5,
+      "time": 30,
+      "maxPoints": 1000
+    },
+    {
+      "type": "single",
+      "question": "下面的装置是：",
+      "media": {
+        "type": "image",
+        "url": "/media/intro-20261117-q03.webp"
+      },
+      "answers": ["走马盘", "诡盘", "活动视镜", "幻盘"],
+      "solutions": [2],
+      "cooldown": 5,
+      "time": 30,
+      "maxPoints": 1000
+    },
+    {
+      "type": "single",
+      "question": "有声电影的“学院比例”（Academy Ratio）指的是？",
+      "answers": ["1.33:1", "1.37:1", "1.78:1", "1.85:1"],
+      "solutions": [1],
+      "cooldown": 5,
+      "time": 30,
+      "maxPoints": 1000
+    },
+    {
+      "type": "single",
+      "question": "第一部完全采用三色染印法（Technicolor）的影片是：",
+      "answers": ["纽约之光", "爵士歌王", "浮华世界", "摩登时代"],
+      "solutions": [2],
+      "cooldown": 5,
+      "time": 30,
+      "maxPoints": 1000
+    },
+    {
+      "type": "single",
+      "question": "白光 → 青色滤色片 → 品红滤色片 = ？",
+      "media": {
+        "type": "image",
+        "url": "/media/intro-20261117-q06-filter-229f2d-Cys-8upX.webp"
+      },
+      "answers": ["红色", "蓝色", "黄色", "绿色"],
+      "solutions": [1],
+      "cooldown": 5,
+      "time": 60,
+      "maxPoints": 1000
+    },
+    {
+      "type": "single",
+      "question": "中国采用的PAL格式电视的常见帧速率为",
+      "answers": ["24 FPS", "25 FPS", "29.97 FPS", "30 FPS"],
+      "solutions": [1],
+      "cooldown": 5,
+      "time": 30,
+      "maxPoints": 1000
+    },
+    {
+      "type": "single",
+      "question": "IMAX 格式在【拍摄】时，采用哪种大小的底片：",
+      "answers": ["35mm", "65mm", "70mm", "75mm"],
+      "solutions": [1],
+      "cooldown": 5,
+      "time": 30,
+      "maxPoints": 1000
+    },
+    {
+      "type": "single",
+      "question": "以下哪一项不能构成胶片上的影像？",
+      "answers": ["银颗粒", "卤化银颗粒", "染料"],
+      "solutions": [1],
+      "cooldown": 5,
+      "time": 30,
+      "maxPoints": 1000
+    },
+    {
+      "type": "single",
+      "question": "【双倍得分】机内色温 > 场景色温时，拍摄白色景物会：",
+      "answers": ["偏黄", "偏蓝", "都有可能"],
+      "solutions": [0],
+      "cooldown": 5,
+      "time": 30,
+      "maxPoints": 2000
+    }
+  ]
+}

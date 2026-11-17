@@ -18,6 +18,35 @@ const question = (overrides: Partial<Question>): Question => ({
 
 const uniqueSubject = (name: string) => `${name} ${Date.now()}`
 
+test("shows players who joined before the manager socket connected", async ({
+  page: manager,
+  newPage,
+}) => {
+  const { promise: connectionReady, resolve: releaseConnection } =
+    Promise.withResolvers<boolean>()
+
+  await manager.route("**/ws/**", async (route) => {
+    await connectionReady
+    await route.continue()
+  })
+
+  try {
+    const pin = await createGame(manager)
+    const player = await newPage()
+
+    await joinGame(player, pin, "Early player")
+    releaseConnection(true)
+
+    await expect(
+      manager.getByText("Early player", { exact: true }),
+    ).toBeVisible({
+      timeout: 3000,
+    })
+  } finally {
+    releaseConnection(true)
+  }
+})
+
 test("restores the manager screen after a reload", async ({
   page: manager,
   newPage,

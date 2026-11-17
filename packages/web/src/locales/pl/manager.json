@@ -45,6 +45,30 @@
       "withinMargin": "{{value}} ± {{margin}}",
       "outsideMargin": "Poza marginesem",
       "average": "Średnia odpowiedź: {{value}}"
+    },
+    "analytics": {
+      "overview": "Podsumowanie",
+      "details": "Szczegóły pytań",
+      "rank": "Końcowa pozycja",
+      "accuracy": "Poprawność",
+      "completion": "Ukończenie",
+      "unanswered": "Bez odpowiedzi",
+      "totalQuestions": "Pytania",
+      "participants": "Uczestnicy",
+      "averageAccuracy": "Średnia poprawność",
+      "averagePoints": "Średni wynik",
+      "highestPoints": "Najwyższy wynik",
+      "players": "Wyniki uczestników",
+      "questionAnalysis": "Analiza pytań",
+      "search": "Szukaj uczestników…",
+      "sort": "Sortuj według",
+      "download": "Eksportuj CSV",
+      "accuracyHint": "Poprawność to poprawne odpowiedzi podzielone przez wszystkie pytania, zgodnie z zasadami gry. Końcowa pozycja i punkty uwzględniają szybkość oraz wagę pytań.",
+      "surveyHint": "Ankiety pokazują udział i ukończenie.",
+      "noMatches": "Brak pasujących uczestników",
+      "duplicateName": "Powtórzony pseudonim",
+      "identityHint": "Ten starszy wynik łączy odpowiedzi według pseudonimu. Osoby o tym samym pseudonimie zachowują zapisane miejsce i punkty; statystyki indywidualne mają wartość —. Nowe gry identyfikują każdego uczestnika osobno.",
+      "note": "Uwaga"
     }
   },
   "tabs": {

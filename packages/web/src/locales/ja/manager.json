@@ -42,6 +42,30 @@
       "withinMargin": "{{value}} ± {{margin}}",
       "outsideMargin": "許容範囲外",
       "average": "平均回答: {{value}}"
+    },
+    "analytics": {
+      "overview": "全体概要",
+      "details": "設問の詳細",
+      "rank": "最終順位",
+      "accuracy": "正答率",
+      "completion": "回答率",
+      "unanswered": "未回答",
+      "totalQuestions": "問題数",
+      "participants": "参加者数",
+      "averageAccuracy": "平均正答率",
+      "averagePoints": "平均得点",
+      "highestPoints": "最高得点",
+      "players": "参加者別の結果",
+      "questionAnalysis": "設問分析",
+      "search": "参加者を検索…",
+      "sort": "並べ替え",
+      "download": "CSVを出力",
+      "accuracyHint": "正答率はゲームの採点規則に基づく正答数÷全問題数です。最終順位と得点には回答速度と問題の配点が反映されます。",
+      "surveyHint": "アンケートでは参加状況と回答率を表示します。",
+      "noMatches": "該当する参加者はいません",
+      "duplicateName": "同じニックネーム",
+      "identityHint": "この過去の結果はニックネームで回答を関連付けています。同名の参加者は保存済みの順位と得点を表示し、個別の回答統計は — と表示します。新しいゲームでは参加者ごとに識別します。",
+      "note": "備考"
     }
   },
   "tabs": {

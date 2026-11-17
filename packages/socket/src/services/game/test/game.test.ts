@@ -423,6 +423,40 @@ describe("quiz flow", () => {
 })
 
 describe("game result", () => {
+  it("keeps stable participant IDs through reconnects and repeated nicknames", async () => {
+    const { game, createSocket, start } = setup(
+      createQuizz([createQuestion()]),
+      [],
+    )
+    const first = createSocket("first-socket", "participant-1")
+    const second = createSocket("second-socket", "participant-2")
+
+    game.join(first, "Same name")
+    game.join(second, "Same name")
+    await start()
+
+    const reconnected = createSocket("reconnected-socket", "participant-1")
+
+    game.reconnect(reconnected)
+    game.selectAnswer(reconnected, [0])
+    game.selectAnswer(second, [1])
+    await vi.advanceTimersByTimeAsync(TICK_MS)
+    game.advance()
+
+    const [meta] = getResultsMeta()
+    const saved = getResultById(meta.id)
+
+    expect(
+      saved.players
+        .map((player) => player.id)
+        .sort((a, b) => String(a).localeCompare(String(b))),
+    ).toEqual(["participant-1", "participant-2"])
+    expect(saved.questions[0].playerAnswers).toMatchObject([
+      { playerId: "participant-1", playerName: "Same name", answerIds: [0] },
+      { playerId: "participant-2", playerName: "Same name", answerIds: [1] },
+    ])
+  })
+
   it("records the real correctness and points of every answer", async () => {
     const question = createQuestion({
       type: QUESTION_TYPES.MULTI,
@@ -447,9 +481,27 @@ describe("game result", () => {
     const [meta] = getResultsMeta()
 
     expect(getResultById(meta.id).questions[0].playerAnswers).toEqual([
-      { playerName: "Alice", answerIds: [0], correct: false, points: -100 },
-      { playerName: "Bob", answerIds: [0, 1], correct: true, points: 1000 },
-      { playerName: "Carol", answerIds: null, correct: false, points: 0 },
+      {
+        playerId: "alice",
+        playerName: "Alice",
+        answerIds: [0],
+        correct: false,
+        points: -100,
+      },
+      {
+        playerId: "bob",
+        playerName: "Bob",
+        answerIds: [0, 1],
+        correct: true,
+        points: 1000,
+      },
+      {
+        playerId: "carol",
+        playerName: "Carol",
+        answerIds: null,
+        correct: false,
+        points: 0,
+      },
     ])
   })
 })

@@ -10,7 +10,7 @@ interface ManagerState<T> {
   settings: GameSettings
   locked: boolean
   status: Status<T> | null
-  players: Player[]
+  players: Array<Player & { timedOut?: boolean }>
 }
 
 type ManagerStore<T> = ManagerState<T> & {

@@ -29,6 +29,10 @@ beforeAll(async () => {
 })
 
 describe("rank translations", () => {
+  it.each([1, 2, 21])("writes rank %d in Chinese", (count) => {
+    expect(rank("zh", count)).toBe(`第 ${count} 名`)
+  })
+
   it.each([
     [1, "1st place"],
     [2, "2nd place"],

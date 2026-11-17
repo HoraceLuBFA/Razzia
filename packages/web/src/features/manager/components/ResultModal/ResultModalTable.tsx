@@ -5,7 +5,7 @@ import type { PlayerAnswerRecord } from "@razzia/common/types/game"
 import { QUIZZ_MODES } from "@razzia/common/constants"
 import { isEstimationOptions } from "@razzia/common/questions/options"
 import {
-  ANSWERS_COLORS,
+  getAnswerColors,
   ANSWERS_LABELS,
 } from "@razzia/web/features/game/utils/constants"
 import { useResultModal } from "@razzia/web/features/manager/contexts/result-modal-context"
@@ -21,6 +21,7 @@ const ResultModalTableRow = ({ playerAnswer }: RowProps) => {
   const { t } = useTranslation()
 
   const { playerName, answerIds, correct, points } = playerAnswer
+  const answerColors = getAnswerColors(questionResult.answers)
   const hasAnswer = answerIds !== null && answerIds.length > 0
 
   const isCorrect = correct ?? isAnswerCorrect(questionResult, answerIds)
@@ -41,8 +42,8 @@ const ResultModalTableRow = ({ playerAnswer }: RowProps) => {
               <span
                 key={id}
                 className={clsx(
-                  "inline-flex items-center gap-1.5 rounded-md px-2 py-1 text-xs text-white",
-                  ANSWERS_COLORS[id % 4],
+                  "inline-flex items-center gap-1.5 rounded-md px-2 py-1 text-xs",
+                  answerColors[id % 4],
                 )}
               >
                 <span className="font-bold">{ANSWERS_LABELS[id % 4]}</span>

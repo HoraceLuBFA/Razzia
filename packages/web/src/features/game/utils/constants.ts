@@ -21,6 +21,21 @@ export const ANSWERS_COLORS = [
 
 export const ANSWERS_LABELS = ["A", "B", "C", "D"]
 
+const COLOR_ANSWER_CLASSES: Partial<Record<string, string>> = {
+  红色: "bg-[#c62828] text-white",
+  蓝色: "bg-[#1565c0] text-white",
+  黄色: "bg-[#fdd835] text-black",
+  绿色: "bg-[#2e7d32] text-white",
+}
+
+export const getAnswerColors = (answers: string[]) => {
+  const colors = answers.map((answer) => COLOR_ANSWER_CLASSES[answer])
+
+  return colors.length > 0 && colors.every((color) => color !== undefined)
+    ? colors
+    : ANSWERS_COLORS
+}
+
 export const GAME_STATES = {
   status: {
     name: STATUS.WAIT,

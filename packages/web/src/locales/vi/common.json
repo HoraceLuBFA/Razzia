@@ -15,7 +15,8 @@
     "ja": "日本語 - Tiếng Nhật",
     "tr": "Türkçe - Tiếng Thổ Nhĩ Kỳ",
     "pl": "Polski - Tiếng Ba Lan",
-    "vi": "Tiếng Việt - Tiếng Việt"
+    "vi": "Tiếng Việt - Tiếng Việt",
+    "zh": "简体中文"
   },
   "loading": "Đang tải...",
   "next": "Tiếp",
@@ -25,5 +26,6 @@
   "submit": "Gửi",
   "close": "Đóng",
   "previous": "Trước",
-  "changeLanguage": "Đổi ngôn ngữ"
+  "changeLanguage": "Đổi ngôn ngữ",
+  "pointsUnit": "pts"
 }

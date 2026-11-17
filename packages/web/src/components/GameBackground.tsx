@@ -1,4 +1,4 @@
-import defaultBackground from "@razzia/web/assets/background.png"
+import defaultBackground from "@razzia/web/assets/background.webp"
 import { getBranding, imageFallback } from "@razzia/web/branding"
 
 const GameBackground = () => {
@@ -9,6 +9,8 @@ const GameBackground = () => {
       <img
         className="pointer-events-none h-full w-full object-cover select-none"
         src={background}
+        fetchPriority="high"
+        decoding="async"
         onError={imageFallback(defaultBackground)}
         alt="background"
       />

@@ -42,6 +42,30 @@
       "withinMargin": "{{value}} ± {{margin}}",
       "outsideMargin": "Ngoài biên độ",
       "average": "Câu trả lời trung bình: {{value}}"
+    },
+    "analytics": {
+      "overview": "Tổng quan",
+      "details": "Chi tiết câu hỏi",
+      "rank": "Xếp hạng cuối",
+      "accuracy": "Tỷ lệ đúng",
+      "completion": "Hoàn thành",
+      "unanswered": "Chưa trả lời",
+      "totalQuestions": "Câu hỏi",
+      "participants": "Người tham gia",
+      "averageAccuracy": "Tỷ lệ đúng trung bình",
+      "averagePoints": "Điểm trung bình",
+      "highestPoints": "Điểm cao nhất",
+      "players": "Kết quả từng người",
+      "questionAnalysis": "Phân tích câu hỏi",
+      "search": "Tìm người tham gia…",
+      "sort": "Sắp xếp theo",
+      "download": "Xuất CSV",
+      "accuracyHint": "Tỷ lệ đúng là số câu đúng chia cho tất cả câu hỏi theo quy tắc chấm điểm. Xếp hạng và điểm cuối bao gồm tốc độ và trọng số câu hỏi.",
+      "surveyHint": "Kết quả khảo sát hiển thị mức tham gia và hoàn thành.",
+      "noMatches": "Không có người tham gia phù hợp",
+      "duplicateName": "Trùng biệt danh",
+      "identityHint": "Kết quả cũ này liên kết câu trả lời theo biệt danh. Người trùng tên giữ thứ hạng và điểm đã lưu; thống kê trả lời cá nhân hiển thị —. Các lượt chơi mới nhận diện riêng từng người.",
+      "note": "Ghi chú"
     }
   },
   "tabs": {

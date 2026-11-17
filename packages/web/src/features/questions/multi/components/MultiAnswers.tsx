@@ -5,7 +5,7 @@ import type { AnswerComponentProps } from "@razzia/web/features/questions/types"
 import Button from "@razzia/web/components/Button"
 import AnswerButton from "@razzia/web/features/game/components/AnswerButton"
 import {
-  ANSWERS_COLORS,
+  getAnswerColors,
   ANSWERS_LABELS,
 } from "@razzia/web/features/game/utils/constants"
 
@@ -15,6 +15,7 @@ const MultiAnswers = ({
   readOnly,
   fill,
 }: AnswerComponentProps) => {
+  const answerColors = getAnswerColors(answers)
   const [selected, setSelected] = useState<number[]>([])
   const { t } = useTranslation()
 
@@ -49,7 +50,7 @@ const MultiAnswers = ({
           return (
             <AnswerButton
               key={key}
-              className={ANSWERS_COLORS[key]}
+              className={answerColors[key]}
               label={ANSWERS_LABELS[key]}
               onClick={() => toggle(key)}
               selected={readOnly ? undefined : isSelected}

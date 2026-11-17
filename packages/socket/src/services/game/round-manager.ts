@@ -347,6 +347,7 @@ export class RoundManager {
         const score = scored.find((s) => s.id === player.id)
 
         return {
+          playerId: player.clientId,
           playerName: player.username,
           answerIds:
             this.playersAnswers.find((a) => a.playerId === player.id)
@@ -465,6 +466,7 @@ export class RoundManager {
       subject: this.opts.quizz.subject,
       date: new Date().toISOString(),
       players: finalPlayers.map((player, index) => ({
+        id: player.clientId,
         username: player.username,
         points: player.points,
         rank: index + 1,

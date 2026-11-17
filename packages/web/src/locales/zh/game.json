@@ -1,0 +1,68 @@
+{
+  "answerNoted": "回答已记录",
+  "confirm": "确认",
+  "correct": "答对了！",
+  "gamePinLabel": "入场码：",
+  "generatedUsernameNotice": "加入时将为你随机生成昵称。",
+  "hud": {
+    "answers": "已答人数",
+    "time": "剩余时间"
+  },
+  "media": {
+    "showImage": "查看图片",
+    "showVideo": "查看视频"
+  },
+  "question": {
+    "show": "查看题目"
+  },
+  "joinInstruction": "打开以下网址加入答题",
+  "leaderboard": "排行榜",
+  "lock": {
+    "lock": "锁定房间",
+    "unlock": "解锁房间"
+  },
+  "pinLabel": "入场码",
+  "playerConnectionLost": "连接已断开",
+  "playerReconnecting": "正在等待重新连接",
+  "playersJoined": "已加入人数",
+  "questionPrefix": "题目 ",
+  "rank_ordinal_other": "第 {{count}} 名",
+  "reconnect": "重新连接",
+  "reconnectTitle": "你有一场答题正在进行",
+  "resultBehind": "，前一名是 ",
+  "resultTop": "你的最终排名为 ",
+  "settings": {
+    "autoAdvance": {
+      "hint": "答案揭晓和排行榜展示后，自动进入下一步。",
+      "label": "自动推进",
+      "leaderboardDelay": "排行榜展示时间",
+      "responsesDelay": "答案揭晓展示时间"
+    },
+    "generatedUsernames": {
+      "label": "生成昵称",
+      "hint": "参与者从系统生成的昵称中选择。"
+    },
+    "answersOnly": {
+      "label": "只显示选项",
+      "hint": "参与端显示答题按钮，可点击“查看题目”再次阅读题干。"
+    },
+    "title": "答题设置"
+  },
+  "startGame": "开始",
+  "summary": {
+    "title": "问卷已完成",
+    "participants": "参与人数",
+    "questions": "题目数量"
+  },
+  "usernamePlaceholder": "请输入昵称",
+  "waitingForAnswers": "等待参与者作答",
+  "waitingForPlayers": "等待参与者加入",
+  "wrong": "答错了",
+  "estimation": {
+    "yourAnswer": "你的答案",
+    "rangeHint": "范围：{{min}} 至 {{max}}"
+  },
+  "showQrCode": "显示二维码",
+  "streak": "连续答对",
+  "pinDigit": "入场码第 {{position}} 位"
+}

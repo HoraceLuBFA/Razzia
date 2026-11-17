@@ -1,7 +1,6 @@
 import type { Question } from "@razzia/common/types/game"
 import { MIN_ANSWERS } from "@razzia/common/constants"
-import { estimationAccuracy } from "@razzia/common/questions/estimation"
-import { isEstimationOptions } from "@razzia/common/questions/options"
+import { QUESTION_SCORING } from "@razzia/socket/services/scoring"
 
 export const choiceInitialValues = (question: Question): Partial<Question> => {
   if (question.answers.length >= MIN_ANSWERS) {
@@ -15,22 +14,11 @@ export const isAnswerCorrect = (
   question: Question,
   answerIds: number[] | null,
 ): boolean => {
-  const { solutions, options } = question
-
-  if (!answerIds || !solutions) {
+  if (!answerIds?.length) {
     return false
   }
 
-  if (isEstimationOptions(options)) {
-    const value = answerIds.at(0)
-    const solution = solutions.at(0)
+  const scoring = QUESTION_SCORING[question.type]
 
-    return (
-      value !== undefined &&
-      solution !== undefined &&
-      estimationAccuracy(value, solution, options.margin) > 0
-    )
-  }
-
-  return answerIds.some((id) => solutions.includes(id))
+  return scoring(question, answerIds) > 0
 }

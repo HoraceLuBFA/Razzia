@@ -22,10 +22,15 @@ const resources = Object.entries(modules).reduce<Resource>(
 )
 
 i18n
+  .on("languageChanged", () => {
+    document.documentElement.lang = i18n.resolvedLanguage ?? "en"
+  })
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     fallbackLng: "en",
+    supportedLngs: Object.keys(resources),
+    load: "languageOnly",
     defaultNS: "common",
     resources,
     detection: {

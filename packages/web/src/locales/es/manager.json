@@ -42,6 +42,30 @@
       "withinMargin": "{{value}} ± {{margin}}",
       "outsideMargin": "Fuera del margen",
       "average": "Respuesta promedio: {{value}}"
+    },
+    "analytics": {
+      "overview": "Resumen",
+      "details": "Detalles de preguntas",
+      "rank": "Posición final",
+      "accuracy": "Aciertos",
+      "completion": "Completado",
+      "unanswered": "Sin responder",
+      "totalQuestions": "Preguntas",
+      "participants": "Participantes",
+      "averageAccuracy": "Porcentaje medio de aciertos",
+      "averagePoints": "Puntuación media",
+      "highestPoints": "Puntuación máxima",
+      "players": "Resultados por participante",
+      "questionAnalysis": "Análisis de preguntas",
+      "search": "Buscar participantes…",
+      "sort": "Ordenar por",
+      "download": "Exportar CSV",
+      "accuracyHint": "Aciertos = respuestas correctas ÷ todas las preguntas, según las reglas de puntuación. La posición y puntuación finales incluyen rapidez y ponderación.",
+      "surveyHint": "Las encuestas muestran participación y preguntas completadas.",
+      "noMatches": "No hay participantes coincidentes",
+      "duplicateName": "Apodo repetido",
+      "identityHint": "Este resultado antiguo vincula respuestas por apodo. Los apodos repetidos conservan su puesto y puntuación; las estadísticas individuales aparecen como —. Las partidas nuevas identifican a cada participante.",
+      "note": "Nota"
     }
   },
   "tabs": {

@@ -1,0 +1,105 @@
+{
+  "addAnswerPlaceholder": "请输入选项…",
+  "addQuestion": "添加题目",
+  "answersCountSuffix": " 个选项",
+  "deleteQuestion": "删除题目",
+  "gameMode": {
+    "quiz": "竞答",
+    "survey": "问卷"
+  },
+  "noQuestionYet": "暂无题目",
+  "question": {
+    "addMediaHint": "为题目添加图片、视频或音频",
+    "config": {
+      "answerTime": "作答时间",
+      "answerTimeHint": "参与者可用于作答的时间",
+      "noTimeLimit": "不限时",
+      "noTimeLimitHint": "按提交答案的先后顺序计分，作答时间不限。",
+      "questionDisplay": "读题时间",
+      "questionDisplayHint": "选项出现前，展示题干的时间",
+      "timings": "时间设置",
+      "answerMode": "作答方式",
+      "category": "题目分组",
+      "categoryPlaceholder": "例如：影像技术",
+      "categoryHint": "连续使用相同分组的题目构成一轮，在分组切换时展示排行榜。",
+      "scoring": "计分设置",
+      "maxPoints": "最高分值",
+      "maxPointsHint": "本题答对可获得的最高分数",
+      "penalty": "答错扣分",
+      "penaltyHint": "答错时扣除的分数，扣分后总分最低为 0",
+      "scoringMode": "计分方式",
+      "scoringMode.strict": "严格计分",
+      "scoringMode.balanced": "平衡计分",
+      "scoringMode.lenient": "宽松计分",
+      "scoringModeHint.strict": "选全正确选项且选项全部正确，获得满分",
+      "scoringModeHint.balanced": "部分计分：正确选项得分减去错误选项扣分",
+      "scoringModeHint.lenient": "按选中的正确选项计分，选错选项扣分为 0",
+      "estimation": {
+        "title": "数值估算",
+        "inputMode": "输入方式",
+        "inputModes": {
+          "slider": "滑块",
+          "input": "直接输入"
+        },
+        "inputModeHint": {
+          "slider": "参与者通过滑块在范围内选择数值",
+          "input": "参与者直接输入范围内的数值"
+        },
+        "min": "最小值",
+        "max": "最大值",
+        "step": "步长",
+        "stepHint": "滑块及预期答案的数值精度",
+        "margin": "容差",
+        "marginHint": "容差范围内，按接近正确答案的程度获得 50% 至 100% 的分值；范围外得分为 0。"
+      }
+    },
+    "deleteQuestion": "删除题目",
+    "deleteQuestionConfirm": "确认删除这道题目吗？",
+    "media": {
+      "audio": "音频",
+      "image": "图片",
+      "video": "视频"
+    },
+    "mediaUrlPlaceholder": "请输入网址…",
+    "placeholder": "请输入题干…",
+    "note": "答案解析",
+    "notePlaceholder": "添加答案揭晓时展示的解析",
+    "estimation": {
+      "correctAnswer": "正确答案"
+    }
+  },
+  "questionHasErrors": "请检查本题设置",
+  "questionType": {
+    "single": "单选题",
+    "multi": "多选题",
+    "estimation": "数值估算题"
+  },
+  "quizzSaved": "题库已保存",
+  "quizzUpdated": "题库已更新",
+  "titleQuizzPlaceholder": "请输入题库名称…",
+  "media": {
+    "delete": "删除媒体",
+    "deleteConfirm": "确认删除“{{name}}”吗？文件将从媒体库及本题库移除，其他引用该文件的题库也将失去对应媒体。",
+    "library": "媒体库",
+    "libraryEmpty": "媒体库为空",
+    "upload": "上传",
+    "uploadHint": "支持图片、音频和视频，最大 {{size}} MB",
+    "search": "搜索媒体…",
+    "filter": {
+      "all": "全部"
+    },
+    "use": "使用",
+    "dropHint": "将图片、音频或视频拖到此处，或点击“上传”按钮",
+    "dropHere": "松开即可上传",
+    "noResults": "暂无匹配的媒体",
+    "fromUrl": "通过网址添加",
+    "view": {
+      "grid": "网格视图",
+      "list": "列表视图"
+    },
+    "filterByType": "按类型筛选"
+  },
+  "addAnswer": "添加选项",
+  "removeAnswer": "移除选项",
+  "markCorrect": "将 {{label}} 设为正确答案"
+}

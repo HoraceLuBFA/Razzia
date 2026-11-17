@@ -15,7 +15,8 @@
     "ja": "日本語 - Japonca",
     "tr": "Türkçe - Türkçe",
     "pl": "Polski - Lehçe",
-    "vi": "Tiếng Việt - Vietnamca"
+    "vi": "Tiếng Việt - Vietnamca",
+    "zh": "简体中文"
   },
   "loading": "Yükleniyor...",
   "next": "İleri",
@@ -25,5 +26,6 @@
   "submit": "Gönder",
   "close": "Kapat",
   "previous": "Geri",
-  "changeLanguage": "Dili değiştir"
+  "changeLanguage": "Dili değiştir",
+  "pointsUnit": "pts"
 }

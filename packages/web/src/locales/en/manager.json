@@ -42,6 +42,30 @@
       "withinMargin": "{{value}} ± {{margin}}",
       "outsideMargin": "Outside the margin",
       "average": "Average answer: {{value}}"
+    },
+    "analytics": {
+      "overview": "Overview",
+      "details": "Question details",
+      "rank": "Final rank",
+      "accuracy": "Accuracy",
+      "completion": "Completion",
+      "unanswered": "Unanswered",
+      "totalQuestions": "Questions",
+      "participants": "Participants",
+      "averageAccuracy": "Average accuracy",
+      "averagePoints": "Average score",
+      "highestPoints": "Highest score",
+      "players": "Player results",
+      "questionAnalysis": "Question analysis",
+      "search": "Search players…",
+      "sort": "Sort by",
+      "download": "Export CSV",
+      "accuracyHint": "Accuracy is correct answers ÷ all questions; correctness follows the game’s scoring rules. Final ranks and scores include speed and question weights.",
+      "surveyHint": "Survey results show participation and completion.",
+      "noMatches": "No matching players",
+      "duplicateName": "Repeated nickname",
+      "identityHint": "This older result links answers by nickname. Players sharing a nickname retain their saved rank and score; their individual answer statistics are shown as —. New games identify each participant separately.",
+      "note": "Note"
     }
   },
   "tabs": {

@@ -13,6 +13,8 @@ const QuestionMedia = ({ media, alt = "", autoPlay = true }: Props) => {
       <img
         alt={alt}
         src={media.url}
+        fetchPriority="high"
+        decoding="async"
         className="max-h-60 w-auto rounded-md sm:max-h-100"
       />
     )

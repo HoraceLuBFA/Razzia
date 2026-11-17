@@ -42,6 +42,30 @@
       "withinMargin": "{{value}} ± {{margin}}",
       "outsideMargin": "Tolerans dışında",
       "average": "Ortalama cevap: {{value}}"
+    },
+    "analytics": {
+      "overview": "Genel bakış",
+      "details": "Soru ayrıntıları",
+      "rank": "Son sıralama",
+      "accuracy": "Doğruluk",
+      "completion": "Tamamlama",
+      "unanswered": "Yanıtsız",
+      "totalQuestions": "Sorular",
+      "participants": "Katılımcılar",
+      "averageAccuracy": "Ortalama doğruluk",
+      "averagePoints": "Ortalama puan",
+      "highestPoints": "En yüksek puan",
+      "players": "Katılımcı sonuçları",
+      "questionAnalysis": "Soru analizi",
+      "search": "Katılımcı ara…",
+      "sort": "Sıralama ölçütü",
+      "download": "CSV dışa aktar",
+      "accuracyHint": "Doğruluk, oyun kurallarına göre doğru yanıtların tüm sorulara oranıdır. Son sıralama ve puanlar hız ile soru ağırlıklarını içerir.",
+      "surveyHint": "Anket sonuçları katılımı ve tamamlamayı gösterir.",
+      "noMatches": "Eşleşen katılımcı yok",
+      "duplicateName": "Tekrarlanan takma ad",
+      "identityHint": "Bu eski sonuç yanıtları takma ada göre eşleştirir. Aynı adlı oyuncuların kayıtlı sırası ve puanı korunur; bireysel yanıt istatistikleri — olarak gösterilir. Yeni oyunlar her katılımcıyı ayrı tanımlar.",
+      "note": "Not"
     }
   },
   "tabs": {

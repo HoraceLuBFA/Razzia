@@ -4,3 +4,7 @@
 .secrets
 release.json
 /coverage
+
+# Local classroom source material and operator-only handoff records
+/NEXT_STEPS.md
+/导论 Quiz 20241022 - Details - Kahoot!.pdf

@@ -1,0 +1,35 @@
+name: razzia
+services:
+  quiz:
+    image: ghcr.io/ralex91/razzia@sha256:5720f1ffe306296a6fb12e636ce3ffc9af42883f6fb482f55ac89972987ceb32
+    container_name: razzia-quiz
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3330:3000"
+    env_file:
+      - .env
+    volumes:
+      - ./config:/app/config
+      - ./releases/20261117-roster-fix-8f75843c/web:/app/web:ro
+      - ./releases/20261117-results-845a5981/socket/index.cjs:/app/socket/index.cjs:ro
+    security_opt:
+      - seccomp=./seccomp-legacy-host.json
+    mem_limit: 512m
+    cpus: 1.0
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s

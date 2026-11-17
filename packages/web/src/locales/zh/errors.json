@@ -1,0 +1,80 @@
+{
+  "api": {
+    "notFound": "请求的资源已失效或已移除",
+    "serverError": "服务器处理请求时出错，请重试"
+  },
+  "auth": {
+    "invalidInviteCode": "入场码错误",
+    "joinTicketInvalid": "加入请求已过期，请重新输入入场码",
+    "sessionFailed": "会话创建失败，请刷新页面",
+    "tokenInvalid": "登录凭证已失效",
+    "tokenMissing": "请先登录或重新加入",
+    "unauthorized": "请登录后继续",
+    "usernameTooLong": "昵称最多 24 个字符",
+    "usernameTooShort": "请输入昵称"
+  },
+  "game": {
+    "alreadyStarted": "本场答题已开始",
+    "expired": "本场答题已过期",
+    "invalidAutoAdvanceDelay": "延迟时间须为 3 至 600 秒",
+    "kickedByManager": "主持人已将你移出本场答题",
+    "locked": "房间已锁定",
+    "managerAlreadyConnected": "主持端已连接",
+    "managerCannotJoin": "请使用独立浏览器会话作为参与者加入",
+    "managerDisconnected": "主持端连接已断开",
+    "noPlayersConnected": "请等待参与者加入后开始",
+    "notFound": "本场答题已结束或入场码有误",
+    "playerAlreadyConnected": "你已加入本场答题"
+  },
+  "invalidRequest": "请求格式有误",
+  "manager": {
+    "failedToReadConfig": "读取答题配置失败",
+    "invalidPassword": "密码错误",
+    "passwordNotConfigured": "请先配置管理密码"
+  },
+  "notFound": {
+    "back": "返回首页",
+    "description": "页面已移除，请检查网址。",
+    "title": "页面未找到"
+  },
+  "quizz": {
+    "answerEmpty": "请输入选项内容",
+    "cooldownTooLong": "读题时间最长为 15 秒",
+    "cooldownTooShort": "读题时间至少为 3 秒",
+    "failedToDelete": "题库删除失败",
+    "failedToSave": "请补全题库，为每道题填写题干并选择至少一个正确答案",
+    "failedToUpdate": "题库更新失败",
+    "invalidMediaUrl": "请输入有效的媒体网址",
+    "maxPointsNegative": "分值须为 0 或正数",
+    "noQuestions": "请添加至少一道题目",
+    "noSolution": "请至少选择一个正确答案",
+    "notFound": "题库未找到",
+    "penaltyNegative": "扣分数值须为 0 或正数",
+    "questionEmpty": "请输入题干",
+    "subjectEmpty": "请输入题库名称",
+    "tooFewAnswers": "每道题至少需要 2 个选项",
+    "tooManyAnswers": "每道题最多支持 4 个选项",
+    "estimationInvalidRange": "最大值须大于最小值",
+    "estimationSolutionOutOfRange": "正确答案须在最小值与最大值之间",
+    "estimationStepInvalid": "步长须大于 0",
+    "estimationMarginNegative": "容差须为 0 或正数",
+    "estimationInvalidOptions": "请检查并补全数值估算设置",
+    "invalidJson": "JSON 文件格式有误，请检查后重试"
+  },
+  "result": {
+    "notFound": "成绩记录未找到"
+  },
+  "route": {
+    "back": "返回首页",
+    "description": "页面加载出错，请重试。",
+    "title": "页面加载出错"
+  },
+  "media": {
+    "invalidName": "媒体文件名有误",
+    "invalidType": "请选择图片、音频或视频文件",
+    "missingFile": "请选择要上传的文件",
+    "notFound": "媒体文件未找到",
+    "tooLarge": "文件超过大小限制",
+    "uploadFailed": "文件上传失败"
+  }
+}

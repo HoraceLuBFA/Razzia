@@ -15,7 +15,8 @@
     "ja": "日本語 - Japonais",
     "tr": "Türkçe - Turc",
     "pl": "Polski - Polonais",
-    "vi": "Tiếng Việt - Vietnamien"
+    "vi": "Tiếng Việt - Vietnamien",
+    "zh": "简体中文"
   },
   "loading": "Chargement...",
   "next": "Suivant",
@@ -25,5 +26,6 @@
   "submit": "Valider",
   "close": "Fermer",
   "previous": "Précédent",
-  "changeLanguage": "Changer de langue"
+  "changeLanguage": "Changer de langue",
+  "pointsUnit": "pts"
 }

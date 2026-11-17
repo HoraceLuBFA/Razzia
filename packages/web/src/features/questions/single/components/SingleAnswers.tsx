@@ -2,7 +2,7 @@ import clsx from "clsx"
 import type { AnswerComponentProps } from "@razzia/web/features/questions/types"
 import AnswerButton from "@razzia/web/features/game/components/AnswerButton"
 import {
-  ANSWERS_COLORS,
+  getAnswerColors,
   ANSWERS_LABELS,
 } from "@razzia/web/features/game/utils/constants"
 
@@ -12,6 +12,7 @@ const SingleAnswers = ({
   readOnly,
   fill,
 }: AnswerComponentProps) => {
+  const answerColors = getAnswerColors(answers)
   const handleSubmit = (key: number) => onSubmit([key])
 
   return (
@@ -24,7 +25,7 @@ const SingleAnswers = ({
       {answers.map((answer, key) => (
         <AnswerButton
           key={key}
-          className={ANSWERS_COLORS[key]}
+          className={answerColors[key]}
           label={ANSWERS_LABELS[key]}
           onClick={() => handleSubmit(key)}
           disabled={readOnly}

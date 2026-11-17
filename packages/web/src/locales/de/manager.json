@@ -42,6 +42,30 @@
       "withinMargin": "{{value}} ± {{margin}}",
       "outsideMargin": "Außerhalb der Toleranz",
       "average": "Durchschnittliche Antwort: {{value}}"
+    },
+    "analytics": {
+      "overview": "Übersicht",
+      "details": "Fragendetails",
+      "rank": "Endplatzierung",
+      "accuracy": "Richtigkeit",
+      "completion": "Abschlussquote",
+      "unanswered": "Unbeantwortet",
+      "totalQuestions": "Fragen",
+      "participants": "Teilnehmende",
+      "averageAccuracy": "Durchschnittliche Richtigkeit",
+      "averagePoints": "Durchschnittspunktzahl",
+      "highestPoints": "Höchste Punktzahl",
+      "players": "Teilnehmerergebnisse",
+      "questionAnalysis": "Fragenanalyse",
+      "search": "Teilnehmende suchen…",
+      "sort": "Sortieren nach",
+      "download": "CSV exportieren",
+      "accuracyHint": "Richtigkeit: richtige Antworten ÷ alle Fragen gemäß den Spielregeln. Endplatzierung und Punkte berücksichtigen Geschwindigkeit und Fragengewichtung.",
+      "surveyHint": "Umfrageergebnisse zeigen Teilnahme und Abschlussquote.",
+      "noMatches": "Keine passenden Teilnehmenden",
+      "duplicateName": "Gleicher Spitzname",
+      "identityHint": "Dieses ältere Ergebnis ordnet Antworten nach Spitznamen zu. Bei gleichen Spitznamen bleiben Rang und Punkte erhalten; individuelle Antwortstatistiken erscheinen als —. Neue Spiele unterscheiden jeden Teilnehmer.",
+      "note": "Hinweis"
     }
   },
   "tabs": {

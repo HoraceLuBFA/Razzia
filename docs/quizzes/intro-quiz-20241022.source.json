@@ -1,0 +1,89 @@
+{
+  "source": "导论 Quiz 20241022 - Details - Kahoot!.pdf",
+  "sourceSHA256": "c9605c94209f7fa2145ddf4fac00722910be3ceb48ce75478d7b9c36145c6b5a",
+  "answerKeyOneBased": [2, 4, 3, 2, 3, 2, 2, 2, 2, 1],
+  "questionCount": 10,
+  "answerCounts": [4, 4, 4, 4, 4, 4, 4, 4, 3, 3],
+  "maxPoints": [1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 2000],
+  "media": [
+    {
+      "question": 1,
+      "path": "/media/intro-20241022-q01.png",
+      "SHA256": "ba25defc6fe8cec2c1ec18df2c2f6183bd844f71b5d60af06e664e311b2cbf90"
+    },
+    {
+      "question": 2,
+      "path": "/media/intro-20241022-q02.png",
+      "SHA256": "27b47d904027ddbb48b2e88dd2d0aad0ff95adf503d18c8dd04e7a719ba63ae5"
+    },
+    {
+      "question": 3,
+      "path": "/media/intro-20241022-q03.png",
+      "SHA256": "9c51ec3207a54cfa6fb35d563aff87aa0c485f289f86129681b6bea919aa6021"
+    }
+  ],
+  "timing": "PDF未显示计时；导入设置为读题5秒、作答30秒",
+  "transcription": "按PDF原题顺序、文字、选项及勾选答案转录，保留第10题双倍得分。",
+  "mediaCredits": [
+    {
+      "question": 2,
+      "credit": "Jose A. Bernat Bacete/Moment/Getty Images"
+    }
+  ],
+  "displaySubject": "导论 Quiz 20261117",
+  "titleRevision": "用户要求将题库显示日期更新为20261117。",
+  "runtimeTiming": {
+    "defaultAnswerSeconds": 30,
+    "question6AnswerSeconds": 60,
+    "questionDisplaySeconds": 5
+  },
+  "optimizedMedia": [
+    {
+      "question": 1,
+      "path": "/media/intro-20261117-q01.webp",
+      "SHA256": "23f3d9346dadaad2a650d6201b298a1613cbbe163fab1b8b46148ad946809b2e"
+    },
+    {
+      "question": 2,
+      "path": "/media/intro-20261117-q02.webp",
+      "SHA256": "95106223671f26937965afa4db07b829a56bd9127bd0c3134e69106f9c64a0ea"
+    },
+    {
+      "question": 3,
+      "path": "/media/intro-20261117-q03.webp",
+      "SHA256": "a01a382d275d14762783b8ef222dc7d7f7198396f27f48f060054575686fc837"
+    }
+  ],
+  "additionalMedia": [
+    {
+      "question": 6,
+      "source": "白光滤色片组合探究.png",
+      "sourceSHA256": "c28a0fc9cc7d35d89cbbecbddc31d025185d30a76888286273c8c200650d2622",
+      "path": "/media/intro-20261117-q06-filter-229f2d-Cys-8upX.webp",
+      "SHA256": "229f2db295dc05ef6fb7b29c1e09e4f669516a9728ff7081428934d831a66471",
+      "originalBytes": 1605889,
+      "optimizedBytes": 69698,
+      "width": 1254,
+      "height": 1254
+    }
+  ],
+  "repositoryMedia": [
+    {
+      "path": "docs/quizzes/media/intro-20261117-q01.webp",
+      "SHA256": "23f3d9346dadaad2a650d6201b298a1613cbbe163fab1b8b46148ad946809b2e"
+    },
+    {
+      "path": "docs/quizzes/media/intro-20261117-q02.webp",
+      "SHA256": "95106223671f26937965afa4db07b829a56bd9127bd0c3134e69106f9c64a0ea"
+    },
+    {
+      "path": "docs/quizzes/media/intro-20261117-q03.webp",
+      "SHA256": "a01a382d275d14762783b8ef222dc7d7f7198396f27f48f060054575686fc837"
+    },
+    {
+      "path": "docs/quizzes/media/intro-20261117-q06-filter-229f2d-Cys-8upX.webp",
+      "SHA256": "229f2db295dc05ef6fb7b29c1e09e4f669516a9728ff7081428934d831a66471"
+    }
+  ],
+  "sourceArchive": "原始 PDF 保留于本地课程资料，仓库提供题库 JSON、来源校验值和运行所需的四幅压缩配图。"
+}

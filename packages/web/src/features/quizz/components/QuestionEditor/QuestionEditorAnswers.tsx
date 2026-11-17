@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next"
 import { MAX_ANSWERS, MIN_ANSWERS, QUIZZ_MODES } from "@razzia/common/constants"
 import FieldError from "@razzia/web/components/forms/FieldError"
 import {
-  ANSWERS_COLORS,
+  getAnswerColors,
   ANSWERS_LABELS,
 } from "@razzia/web/features/game/utils/constants"
 import { QUESTION_REGISTRY } from "@razzia/web/features/questions"
@@ -25,6 +25,7 @@ const QuestionEditorAnswers = () => {
   const { control } = useFormContext<QuizzFormValues>()
   const { t } = useTranslation()
 
+  const answerColors = getAnswerColors(currentQuestion.answers)
   const questionType = currentQuestion.type
   const { SolutionPicker } = QUESTION_REGISTRY[questionType]
 
@@ -94,11 +95,11 @@ const QuestionEditorAnswers = () => {
                   <div
                     className={clsx(
                       "flex items-center gap-3 rounded-2xl px-4 py-6",
-                      ANSWERS_COLORS[i],
+                      answerColors[i],
                       fieldState.invalid && "ring-2 ring-red-500",
                     )}
                   >
-                    <span className="flex size-7 shrink-0 items-center justify-center rounded-md bg-black/20 text-sm font-bold text-white md:size-8 md:text-base">
+                    <span className="flex size-7 shrink-0 items-center justify-center rounded-md bg-black/20 text-sm font-bold md:size-8 md:text-base">
                       {ANSWERS_LABELS[i]}
                     </span>
                     <div className="flex flex-1 items-center justify-between gap-1.5 drop-shadow-md">
@@ -108,7 +109,7 @@ const QuestionEditorAnswers = () => {
                         aria-describedby={
                           fieldState.invalid ? `${field.name}-error` : undefined
                         }
-                        className="w-full bg-transparent font-semibold text-white placeholder-white/70 outline-none"
+                        className="w-full bg-transparent font-semibold text-inherit placeholder-current outline-none placeholder:opacity-70"
                         placeholder={t("quizz:addAnswerPlaceholder")}
                       />
                       {gameMode !== QUIZZ_MODES.SURVEY && SolutionPicker && (

@@ -1,0 +1,76 @@
+{
+  "configurationsTitle": "管理后台",
+  "logout": "退出登录",
+  "passwordPlaceholder": "密码",
+  "quizz": {
+    "create": "创建题库",
+    "delete": "删除题库",
+    "deleteConfirm": "确认删除“{{name}}”吗？删除后将永久移除该题库。",
+    "deleted": "题库已删除",
+    "export": "导出题库 JSON",
+    "import": "导入题库 JSON",
+    "none": "暂无题库",
+    "notFound": "题库未找到",
+    "pleaseCreate": "请先创建题库",
+    "pleaseSelect": "请选择题库",
+    "startGame": "创建场次",
+    "edit": "编辑题库"
+  },
+  "result": {
+    "delete": "删除成绩",
+    "deleteConfirm": "确认删除“{{name}}”的成绩吗？删除后将永久移除该记录。",
+    "deleted": "成绩已删除",
+    "noAnswer": "未作答",
+    "none": "暂无成绩，完成一场答题后可在这里查看",
+    "paginationOf": " / ",
+    "stats": {
+      "correctAnswers": "答对人数",
+      "playersAnswered": "作答人数"
+    },
+    "table": {
+      "answered": "已作答",
+      "correct": "答对",
+      "correctIncorrect": "答对 / 答错",
+      "incorrect": "答错",
+      "player": "参与者",
+      "points": "得分"
+    },
+    "playerCount": "{{count}} 人",
+    "timeLimitSuffix": "秒作答时间",
+    "estimation": {
+      "answered": "已作答",
+      "withinMargin": "{{value}} ± {{margin}}",
+      "outsideMargin": "超出容差范围",
+      "average": "平均答案：{{value}}"
+    },
+    "analytics": {
+      "overview": "整场概览",
+      "details": "逐题详情",
+      "rank": "最终排名",
+      "accuracy": "正确率",
+      "completion": "完成率",
+      "unanswered": "未答题数",
+      "totalQuestions": "题目总数",
+      "participants": "参与人数",
+      "averageAccuracy": "平均正确率",
+      "averagePoints": "平均分",
+      "highestPoints": "最高分",
+      "players": "个人成绩",
+      "questionAnalysis": "逐题分析",
+      "search": "搜索参与者…",
+      "sort": "排序方式",
+      "download": "导出 CSV",
+      "accuracyHint": "正确率 = 答对题数 ÷ 本场总题数，答对判定采用本场计分规则。最终排名与总分同时考虑答题速度和题目分值。",
+      "surveyHint": "问卷成绩展示参与和完成情况。",
+      "noMatches": "暂无匹配的参与者",
+      "duplicateName": "同名昵称",
+      "identityHint": "这份历史成绩通过昵称关联答案。同名参与者保留已保存的排名和得分，个人答题统计显示为“—”。新场次通过参与者身份分别统计。",
+      "note": "备注"
+    }
+  },
+  "tabs": {
+    "play": "开始答题",
+    "quizz": "题库管理",
+    "results": "成绩分析"
+  }
+}

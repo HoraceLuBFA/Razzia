@@ -9,6 +9,7 @@ import {
 } from "@razzia/web/components/Select"
 
 const LANGUAGES = [
+  { code: "zh", label: "common:language.zh" },
   { code: "de", label: "common:language.de" },
   { code: "en", label: "common:language.en" },
   { code: "es", label: "common:language.es" },
@@ -22,7 +23,7 @@ const LANGUAGES = [
 
 const LanguageSwitcher = () => {
   const { t, i18n } = useTranslation()
-  const normalizedLanguage = i18n.language.slice(0, 2)
+  const normalizedLanguage = i18n.resolvedLanguage ?? "en"
 
   return (
     <Select

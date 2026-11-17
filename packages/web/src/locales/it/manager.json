@@ -42,6 +42,30 @@
       "withinMargin": "{{value}} ± {{margin}}",
       "outsideMargin": "Fuori dal margine",
       "average": "Risposta media: {{value}}"
+    },
+    "analytics": {
+      "overview": "Panoramica",
+      "details": "Dettagli delle domande",
+      "rank": "Posizione finale",
+      "accuracy": "Risposte corrette",
+      "completion": "Completamento",
+      "unanswered": "Senza risposta",
+      "totalQuestions": "Domande",
+      "participants": "Partecipanti",
+      "averageAccuracy": "Percentuale media corretta",
+      "averagePoints": "Punteggio medio",
+      "highestPoints": "Punteggio massimo",
+      "players": "Risultati individuali",
+      "questionAnalysis": "Analisi delle domande",
+      "search": "Cerca partecipanti…",
+      "sort": "Ordina per",
+      "download": "Esporta CSV",
+      "accuracyHint": "Percentuale corretta = risposte corrette ÷ tutte le domande, secondo le regole del gioco. Classifica e punteggi includono velocità e peso delle domande.",
+      "surveyHint": "I sondaggi mostrano partecipazione e completamento.",
+      "noMatches": "Nessun partecipante corrispondente",
+      "duplicateName": "Nickname ripetuto",
+      "identityHint": "Questo vecchio risultato associa le risposte per nickname. I nickname uguali conservano posizione e punteggio; le statistiche individuali mostrano —. Le nuove partite identificano ciascun partecipante.",
+      "note": "Nota"
     }
   },
   "tabs": {
